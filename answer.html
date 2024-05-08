@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body style='background-image: url("images/click.jpg.png");background-repeat: no-repeat; background-position:right 5px '>
+    
+    <form action =contactus.html></form>
+    
+    <div align="center">
+    <label >
+        <label for="myChoice"><h2>GO TO HIGH TO START OUR CONVERSATION!</h2></label><br>
+             low<input type="range" name="myChoice" id="myChoice"
+            min="1" max="100"> high
+    <script>
+    document.getElementById("myChoice").addEventListener("change", function() {
+        console.log("Value changed to: " + this.value);
+        if (this.value == 100) {
+            window.location.href ="contactus.html"; // Replace "contact.html" with the URL of your contact sheet
+        }
+    });
+    
+   </script>
+    </div>
+  </form>
+
+</body>

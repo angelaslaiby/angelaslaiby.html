@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="design.css">
+    </head>
+ <body style ='background-image: url("images/contactphoto.jpg.jpg");background-repeat:repeat-y;background-position: left ;'>
+  <form action="thankyou.html">
+    <div align ="center">
+       <label>
+          <h2>First Name:</h2>
+            <input type =" text" placeholder=" Enter your first name" name="fname" size="50" required>
+        </label>
+
+       <label>
+         <h2>Last Name:</h2>
+          <input type =" text" placeholder="Enter your last name" name="lastname" size="50"required>
+        </label>
+
+       <label>
+         <h2>Email Address:</h2>
+          <input type ="email" placeholder=" Enter your email address" name="email" size="50" required>
+        </label>
+
+       <label>
+         <h2>Birth Date:</h2>
+          <input type ="date" name="mydate" style="width: calc(50 * 1ch);" required>
+        </label>
+
+        <label>
+            <h2>Phone Number</h2>
+            <select>
+                <option value="+1">USA (+1)</option>
+                <option value="+44">UK (+44)</option>
+                <option value ="+961">Lebanon(+961)</option>
+                <option value="+49">Germany (+49)</option>
+                <option value="+33">France (+33)</option>
+                <option value="+81">Japan (+81)</option>
+            </select>
+            <!--required: Makes the field required, ensuring that the user must input their phone number before submitting the form.-->
+             <input type ="tel" placeholder="Enter your phone number" name="Phone_number" size="30" required>
+           </label>
+
+           <label>
+            <h2>Address</h2>
+             <input type ="text"  placeholder="Enter your address " name="Address" size="50" required>
+           </label>
+
+           <label>
+            <h2>Job </h2>
+             <input type ="text" name="job" placeholder="Enter your  current Job"  size="50" required>
+           </label>
+
+           <label>
+               <h2>Destination job</h2>
+                 <input type =" text" placeholder=" Enter your destination job name" name="destjob" size="50" required>
+           </label>
+      
+        <lable> <h2>Gender:</h2></lable>
+        <label><input type ="radio" name="gender" value="Female" required>Female</label>
+        <label><input type ="radio" name="gender" value ="Male" required>Male</label>
+        <label><input type ="radio" name="gender" value ="Prefer not to say" required>Prefer not to say</label>
+
+        <lable> <h2>Marital Status:</h2></lable>
+        <label><input type ="radio"name= "marital_status" value="Single" required>Single</label>
+        <label><input type ="radio" name="marital_status" value ="Married" required>Married</label>
+        <label><input type ="radio" name="marital_status" value ="Divoced" required>Divorced</label>
+        <label><input type ="radio" name="marital_status" value ="Widowed" required>Widowed</label>
+        <label><input type ="radio" name="marital_status" value="Prefer not to say" required>Prefer not to say</label>
+        
+        
+        <label>
+            <h2>Message</h2>
+            <textarea name="message" placeholder="Enter your message here" required></textarea>
+            
+        </label>
+    </div>
+
+        <button class="buttsubmit">Submit</button>
+
+
+        <script>
+          function validateForm() {
+    
+              var email = document.getElementById("email").value;
+            
+              var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(email)) {
+                  alert("Please enter a valid email address");
+                  return false;
+              }
+              return true;
+          }
+      </script>    
+    </form>
+    <br> <br> <br>
+    
+
+ </body>
+</html>

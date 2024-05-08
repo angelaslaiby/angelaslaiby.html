@@ -1,0 +1,152 @@
+/* for the body of the pages*/
+#bdy{
+    background-color:cornsilk;
+}
+/*for my schedule title*/
+.par1 {
+    text-align: center;
+    color:blue;
+}
+/*for the color of the email link*/
+a{
+    color :red;
+}
+/* for the color of the summary*/
+.summary {
+        color:yellowgreen;
+        text-indent: 50px;
+}
+/* table border*/
+.tble{
+    border-color:black;
+    border-width: 20px;
+    border-style: double;
+    width:800px;
+    height:400px;
+}
+/* horizontal rule for the link*/
+hr {
+        border: none;
+        height: 2px;
+        background-color: black;
+    }    
+
+/* Table */
+.tble {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width  */
+    margin: auto; /* Center the table */
+}
+
+/* Table Header */
+.tble th {
+    /*color of the header backgroun*/
+    background-color: yellowgreen ; 
+    padding : 10px; 
+}
+
+/* Table Rows */
+.tble tr:nth-child(even) {
+    background-color: #f2f2f2; /* Set even row background color */
+}
+
+/* Table Data */
+.tble td {
+    padding: 10px; /* Add padding to the data cells */
+}
+
+/* Table Borders */
+.tble th, .tble td {
+    border: 1px solid #ddd; /* Set border for cells */
+}
+.lef{
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+}
+/*for the submit */
+.buttsubmit{
+    background-color: blue;
+    color:black;
+    padding:40px, 400px;
+    border-radius: 4px;
+    font-size: 40px;
+    margin-right: 10px;
+    float:right;
+    
+}
+/*for the text area(contact us sheet)*/
+textarea{
+    width:300px;
+    height:100px;
+    resize: none;
+
+}
+/*for the score phrase*/
+.score{
+    color:blue;
+    font-size: 100px;
+}
+
+/* Adjustments for different device sizes */
+@media screen and (max-width: 768px) {
+    /* Adjustments for small devices (mobiles) */
+    .tble {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjustments for medium devices (Tablets) */
+    .tble {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* Adjustments for large devices (laptops, desktops) */
+    .tble {
+        width: 80%;
+    }
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form container styles */
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray color */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
